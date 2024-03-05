@@ -46,7 +46,4 @@ const coffeeSchema = new mongoose.Schema({
 },{
     timestamps: true
 });
-
-coffeeSchema.plugin(mongooseAggregatePaginate);
-
 export const CoffeeData = mongoose.model("coffee", coffeeSchema);
